@@ -5,11 +5,18 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
     <title>WeUI</title>
     <!-- 引入 WeUI CDN 链接 -->
-<!--    <link rel="stylesheet" href="https://res.wx.qq.com/open/libs/weui/2.3.0/weui.min.css"/>-->
-        <link rel="stylesheet" href="../style/weui.min.css"/>
+    <!--    <link rel="stylesheet" href="https://res.wx.qq.com/open/libs/weui/2.3.0/weui.min.css"/>-->
+    <link rel="stylesheet" href="../style/weui.min.css"/>
+
+    <script>
+        function test(){
+            alert("测试")
+        }
+    </script>
+
 </head>
 <body>
 <!-- 使用 -->
-<a href="javascript:;" class="weui-btn weui-btn_primary">绿色按钮</a>
+<a href="javascript:;" onclick="test()" class="weui-btn weui-btn_primary">按钮</a>
 </body>
 </html>
