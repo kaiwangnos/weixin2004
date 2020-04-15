@@ -14,7 +14,6 @@ public class HelloController {
 
     @RequestMapping("hello")
     public ModelAndView hello() {
-        String rst = "Hello,现在可以通过外网访问了";
 //        for (int i = 0; i < 10000; i++) {
 //
 //            logger.error("测试日志");
