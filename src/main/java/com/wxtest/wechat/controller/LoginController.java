@@ -1,5 +1,7 @@
 package com.wxtest.wechat.controller;
 
+import org.springframework.web.bind.annotation.RestController;
+
 /**
  *    
  * <p>
@@ -15,5 +17,7 @@ package com.wxtest.wechat.controller;
  * <p>
  *  
  */
+@RestController
 public class LoginController {
+
 }
