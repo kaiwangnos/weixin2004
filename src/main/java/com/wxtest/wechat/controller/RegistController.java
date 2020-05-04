@@ -2,9 +2,7 @@ package com.wxtest.wechat.controller;
 
 import com.wxtest.wechat.entity.RegistResponse;
 import com.wxtest.wechat.entity.ResponseHead;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  *    
@@ -25,13 +23,15 @@ import org.springframework.web.bind.annotation.RestController;
 public class RegistController {
 
     @RequestMapping("/regist")
-    public RegistResponse regist() {
+    public RegistResponse regist(@RequestBody String userName) {
         RegistResponse registResponse = new RegistResponse();
         ResponseHead responseHead = new ResponseHead();
         responseHead.setRtnCode("000000");
         responseHead.setRtnMsg("成功");
         registResponse.setHead(responseHead);
         registResponse.setBody("123123");
+
+        System.out.println(userName);
 
         return registResponse;
     }
